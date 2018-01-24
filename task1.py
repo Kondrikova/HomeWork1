@@ -92,11 +92,11 @@ def main():
     uuu = u.copy()
     u1 = explicit(u)
     f = makeData()
-    print calcErr(u1,f)
+    print 'Error Explisit: ', calcErr(u1,f)
     u2 = implicit(uu)
-    print calcErr(u2, f)
+    print 'Error Implisit: ', calcErr(u2, f)
     u3 = KNmethod(uuu)
-    print calcErr(u3,f)
+    print 'Error KN: ', calcErr(u3,f)
 
 if __name__ == '__main__':
     main()
